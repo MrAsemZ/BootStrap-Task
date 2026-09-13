@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      #bg-design {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 12%;
+        height: 100%;
+        background-color: #0066ff;
+        border-top-right-radius: 60px;
+        border-bottom-right-radius: 60px;
+        z-index: 0;
+      }
+
+      /* Pushes all content strictly to the right side of #bg-design */
+      .content-wrapper {
+        position: relative;
+        z-index: 1;
+        margin-left: 15%; 
+      }
+
+      #logo {
+        width: 40px;
+      }
+    </style>
+  </head>
+  <body class="bg-light">
+
+    <!-- Container uses ps-0 so blue shape touches the left edge -->
+    <div class="container position-relative bg-white shadow rounded py-5 pe-5 ps-0 my-5">
+      
+      <!-- Purely decorative blue sidebar with nothing on top -->
+      <div id="bg-design"></div>
+      
+      <!-- Content Wrapper pushed to the right -->
+      <div class="content-wrapper">
+        
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg mb-5">
+          <div class="container-fluid p-0">
+            <a class="navbar-brand" href="#">
+              <img id="logo" src="media/logo.png" alt="Logo">
+            </a>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto gap-3">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Issues</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Sign In</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Hero Section Grid -->
+        <div class="row align-items-center my-5">
+          <!-- Text Column -->
+          <div class="col-lg-5">
+            <p class="text-primary mb-1">Your online wardrobe</p>
+            <h1 class="display-3 fw-bold mb-4">Web<br>Developer</h1>
+            <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Get More</a>
+          </div>
+
+          <!-- Image Column -->
+          <div class="col-lg-7 text-center">
+            <img src="media/developer.jpg" class="img-fluid" alt="Developer Illustration">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </body>
+</html>
