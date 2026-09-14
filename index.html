@@ -19,7 +19,6 @@
         z-index: 0;
       }
 
-      /* Pushes all content strictly to the right side of #bg-design */
       .content-wrapper {
         position: relative;
         z-index: 1;
@@ -33,16 +32,12 @@
   </head>
   <body class="bg-light">
 
-    <!-- Container uses ps-0 so blue shape touches the left edge -->
     <div class="container position-relative bg-white shadow rounded py-5 pe-5 ps-0 my-5">
       
-      <!-- Purely decorative blue sidebar with nothing on top -->
       <div id="bg-design"></div>
       
-      <!-- Content Wrapper pushed to the right -->
       <div class="content-wrapper">
         
-        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg mb-5">
           <div class="container-fluid p-0">
             <a class="navbar-brand" href="#">
@@ -71,21 +66,45 @@
           </div>
         </nav>
 
-        <!-- Hero Section Grid -->
         <div class="row align-items-center my-5">
-          <!-- Text Column -->
           <div class="col-lg-5">
             <p class="text-primary mb-1">Your online wardrobe</p>
             <h1 class="display-3 fw-bold mb-4">Web<br>Developer</h1>
             <a href="#" class="btn btn-primary rounded-pill px-4 py-2">Get More</a>
           </div>
 
-          <!-- Image Column -->
           <div class="col-lg-7 text-center">
             <img src="media/developer.jpg" class="img-fluid" alt="Developer Illustration">
           </div>
         </div>
 
+        <div class="container my-5">
+          <div class="row">
+            <div class="col-md-4" border-start ps-4>
+              <span class="text-uppercase text-secondary fw-semibold small">Step 1</span>
+              <h2 class="text-primary mb-3">Site layout</h2>
+              <p class="text-secondary samll">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, maxime quasi distinctio in voluptate porro deserunt excepturi deleniti aliquam laudantium optio perferendis, libero dolorem fugit repellat. Ex suscipit necessitatibus eius!
+              </p>
+            </div>  
+
+              <div class="col-md-4" border-start ps-4>
+              <span class="text-uppercase text-secondary fw-semibold small">Step 2</span>
+              <h2 class="text-primary mb-3">Design</h2>
+              <p class="text-secondary samll">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, maxime quasi distinctio in voluptate porro deserunt excepturi deleniti aliquam laudantium optio perferendis, libero dolorem fugit repellat. Ex suscipit necessitatibus eius!
+              </p>
+            </div> 
+
+              <div class="col-md-4" border-start border-end ps-4>
+              <span class="text-uppercase text-secondary fw-semibold small">Step 3</span>
+              <h2 class="text-primary mb-3">Layout</h2>
+              <p class="text-secondary samll">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, maxime quasi distinctio in voluptate porro deserunt excepturi deleniti aliquam laudantium optio perferendis, libero dolorem fugit repellat. Ex suscipit necessitatibus eius!
+              </p>
+            </div> 
+        </div>
+        </div>
       </div>
     </div>
 
